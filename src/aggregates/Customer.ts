@@ -18,7 +18,7 @@ interface Customer {
 //set a simple factory method to add a new customer
 const newCustomer = (name: string) => {
     if(name === '') {
-        throw error;
+        throw new Error("Please provide a name!");
     }
 
     //Create a new person
